@@ -1812,7 +1812,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #85ad16;
+  background: #de7a3b;
 }
 .feed-link,
 .chat {
@@ -1991,7 +1991,7 @@ pre .javascript .function {
 }
 .footer {
   font-size: 14px;
-  color: #999;
+  color: #ff2a2a;
   background: url("/images/headbg.jpg") repeat !important;
 }
 .footer img {
