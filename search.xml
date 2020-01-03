@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[hello]]></title>
-    <url>%2F2020%2F01%2F02%2Fhello.html</url>
-    <content type="text"><![CDATA[第一次见面你好，同学！欢迎你使用基于hexo搭建的next主题的博客系统。 关于Markdown当你能够正常访问这个页面时，相信你已经知道以后写博客文章是基于Markdown语法的，请熟练使用他。 祝你好运]]></content>
+    <title><![CDATA[MarkDown基本语法]]></title>
+    <url>%2F2020%2F01%2F03%2FMarkDown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html</url>
+    <content type="text"><![CDATA[一、标题 在想要设置为标题的文字前面加#来表示，一个#是一级标题，二个#是二级标题，以此类推。最多支持六级标题。示例代码：123456# 我是一级标题## 我是二级标题### 我是三级标题#### 我是四级标题##### 我是五级标题###### 我是六级标题 效果展示： ———————————-&gt;# 二、段落段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用两个以上空格加上回车（引用中换行省略回车）示例代码：123这是一个段落内的内容，前后都有空行。此处演示强制换行。 换行后的内容====== 接着说，说点啥呢？我也不知道了……效果展示：———————————-&gt;# 三、引用在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt; n个…貌似可以一直加下去，但没神马卵用示例代码：1234&gt; 区块引用&gt; &gt; 嵌套引用&gt; &gt; &gt;三嵌套引用&gt; &gt; &gt; &gt; 四嵌套引用效果展示： 四、字体 加粗要加粗的文字左右分别用两个*号包起来 斜体要倾斜的文字左右分别用一个*号包起来 斜体加粗要倾斜和加粗的文字左右分别用三个*号包起来 删除线要加删除线的文字左右分别用两个~~号包起来示例代码：1234**这是加粗的文字***这是倾斜的文字*`***这是斜体加粗的文字***~~这是加删除线的文字~~ 效果展示： 五、分割线三个或者三个以上的 - 或者 * 都可以。示例代码： 1234(---)(----)(***)(*****) 效果展示： 六、图片添加图片形式和链接相似，只需要在链接的基础上前方加一个 ！号。语法：123![图片alt](图片地址 ''图片title'')图片alt就是显示在图片下面的文字，相当于对图片内容的解释。图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加 示例代码：1![2020年](https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2047174557,1395898466&amp;fm=26&amp;gp=0.jpg "2020年") 效果展示： 七、列表 无序列表语法：无序列表用 - + * 任何一种都可以示例代码：12345- 列表内容+ 列表内容* 列表内容注意：- + * 跟内容之间都要有一个空格 效果展示： 有序列表语法：数字加点示例代码：123451.列表内容2.列表内容3.列表内容注意：序号跟内容之间要有空格 效果展示： - 列表嵌套语法：上一级和下一级之间敲三个空格即可示例代码：123456789101112131415161718192021- 一级无序列表内容 - 二级无序列表内容 - 二级无序列表内容 - 二级无序列表内容- 一级无序列表内容 1. 二级有序列表内容 2. 二级有序列表内容 3. 二级有序列表内容1. 一级有序列表内容 - 二级无序列表内容 - 二级无序列表内容 - 二级无序列表内容2. 一级有序列表内容 1.二级有序列表内容 2. 二级有序列表内容 3. 二级有序列表内容效果展示： 八、表格语法：1234567891011表头|表头|表头---|:--:|---:内容|内容|内容内容|内容|内容第二行分割表头和内容。- 有一个就行，为了对齐，多加了几个文字默认居左-两边加：表示文字居中-右边加：表示文字居右注：原生的语法两边都要用 | 包起来。此处省略 示例代码：12345姓名|性别|年龄--|:--:|--:张三|男|20李四|女|28王五|未知|30 效果展示： 九、代码块 单行代码语法：代码之间分别用一个反引号（·）包起来（键盘上1键前面的字符Esc键下面的键）1`SpringApplication.run(FebsServerSystemApplication.class, args);` 效果展示： 多行代码语法：代码之间分别用三个反引号包起来，且两边的反引号单独占一行示例代码： 1234567891011121314151617181920import cc.mrbird.febs.common.annotation.FebsCloudApplication;import org.mybatis.spring.annotation.MapperScan;import org.springframework.boot.SpringApplication;import org.springframework.boot.autoconfigure.SpringBootApplication;import org.springframework.scheduling.annotation.EnableAsync;import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;import org.springframework.transaction.annotation.EnableTransactionManagement;@EnableAsync@SpringBootApplication@FebsCloudApplication@EnableTransactionManagement@EnableGlobalMethodSecurity(prePostEnabled = true)@MapperScan("cc.mrbird.febs.server.system.mapper")public class FebsServerSystemApplication &#123; public static void main(String[] args) &#123; SpringApplication.run(FebsServerSystemApplication.class, args); &#125;&#125; 效果展示： 十、超链接 语法： 12[超链接名](超链接地址 "超链接title")title可加可不加 示例代码： 123[简书](http://jianshu.com)[百度](http://baidu.com) 效果展示： 注：Markdown本身语法不支持链接在新页面中打开，貌似简书做了处理，是可以的。别的平台可能就不行了，如果想要在新页面中打开的话可以用html语言的a标签代替。12345&lt;a href="超链接地址" target="_blank"&gt;超链接名&lt;/a&gt;示例&lt;a href="https://www.jianshu.com/u/ffc7732f713b" target="_blank"&gt;简书&lt;/a&gt;简书]]></content>
       <categories>
-        <category>develop</category>
+        <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>linux</tag>
-        <tag>os</tag>
-        <tag>java</tag>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[第一篇博客]]></title>
-    <url>%2F2018%2F11%2F30%2F%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html</url>
-    <content type="text"><![CDATA[第一次见面你好，同学！欢迎你使用基于hexo搭建的next主题的博客系统。 关于Markdown当你能够正常访问这个页面时，相信你已经知道以后写博客文章是基于Markdown语法的，请熟练使用他。 祝你好运]]></content>
-      <categories>
-        <category>develop</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>os</tag>
-        <tag>java</tag>
-        <tag>python</tag>
+        <tag>markdown</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
 </search>
